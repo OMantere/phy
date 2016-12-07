@@ -36,18 +36,19 @@ hold on
 %plot(x_pv_si(2:end), px_pv);
 %plot(t(2:end), Ekin_pv);
 %plot(t, Epot_pv);
-plot(t(2:end), Etot_pv);
-xlabel('Aika (s)'); 
-ylabel('Totaalienergia (J)');
+%plot(t(2:end), Etot_pv);
+%xlabel('Aika (s)'); 
+%ylabel('Totaalienergia (J)');
 
-figure
-hold on
 %plot(t, x_sv);
 %plot(t(2:end), vx_sv);
 %plot(t(3:end), ax_sv);
-%xlabel('Siirtym‰ (m)'); 
-%ylabel('Liikem‰‰r‰ (kgm/s)');
+plot(x_pv_si(2:end), vx_pv);
+plot(x_sv_si(2:end), vx_sv);
+xlabel('Paikka (m)'); 
+ylabel('Nopeus (m/s)');
+legend('Vaimentamaton heiluri', 'Vaimennettu heiluri');
 %plot(x_sv_si(2:end), px_sv);
-plot(t(2:end), Etot_sv);
-xlabel('Aika (s)'); 
-ylabel('Totaalienergia (J)');
+%plot(t(2:end), Etot_sv);
+%xlabel('Aika (s)'); 
+%ylabel('Totaalienergia (J)');
